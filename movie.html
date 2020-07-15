@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>movie</title>
+<style>
+	* {
+  box-sizing: border-box;
+     }
+ 
+     body{
+        padding: 10px;
+        background: #f1f1f1;
+    }
+	.pic img{
+		width: auto;height:300px;
+		margin: 80px 60px ;
+		display: inline-block;
+	}
+	img first-child{
+		float: clear;
+		width:15%;height:auto;
+		position:absolute;top:100px;left:80px;
+		margin:20px 50px;
+	}
+	
+	.chara img{
+		width:15%;height:auto;
+		display: inline-block;
+		margin: 10px 38px 0px 70px;
+	}
+
+	span{
+		font-family:"STXingkai";
+		margin-top:50px;
+		margin-left: 80px;
+	}
+	/* 创建两列 */
+    /* Left column */
+    .leftcolumn {   
+        float: left;
+        width: 65%;
+    }
+ 
+    /* 右侧栏 */
+    .rightcolumn {
+     float: left;
+     width: 35%;
+     background-color: #f1f1f1;
+     padding-left: 20px;
+     }
+ 
+     /* 图像部分 */
+    .fakeimg {
+     background-color: #aaa;
+     width: 100%;
+     padding: 20px;
+     }
+ 
+    /* 文章卡片效果 */
+     .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+     }
+ 
+     /* 列后面清除浮动 */
+     .row:after {
+     content: "";
+     display: table;
+     clear: both;
+     }
+ 
+     /* 底部 */
+    .footer {
+     padding: 20px;
+     text-align: center;
+     background: #ddd;
+     margin-top: 20px;
+    }
+ 
+    /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+     @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+     width: 100%;
+     padding: 0;
+     }
+}
+ 
+</style>
+</head>
+
+<body>
+	<img src="media/movie小图.png" alt="" ><br>
+<span style="font-family:STXingkai;font-size:20px">点击图片，跳转到豆瓣电影中查看详情！</span>
+<div class="card">
+<div class="fakeimg" style="height:450px;">
+<div class="pic">
+	<a href="https://movie.douban.com/subject/1291546/">
+	   <img src="media/霸王别姬.jpg" alt="" id="bawang" title="点击图片，跳转到豆瓣查看详情！">
+	</a>
+	<a href="https://movie.douban.com/subject/1889243/">
+	   <img src="media/interstellar.jpg" alt="" id="xingji" title="点击图片，跳转到豆瓣查看详情！">
+	</a>
+	<a href="https://movie.douban.com/subject/1291858/">
+	   <img src="media/鬼子来了.jpg" alt="" id="guizi" title="点击图片，跳转到豆瓣查看详情！">
+	</a>
+	<a href="https://movie.douban.com/subject/3541415/">
+	   <img src="media/inception.jpg" alt="" id="daomeng" title="点击图片，跳转到豆瓣查看详情！">
+	</a>
+	</div>
+		</div>
+
+<div class="chara">
+	<img src="media/霸王.png" alt="" id="bawang1">
+	<img src="media/星际.png" alt="">
+	<img src="media/鬼子.png" alt="">
+	<img src="media/盗梦.png" alt="">
+	</div>
+</div>
+	<hr style=" height:2px;border:none;border-top:2px dotted #185598;">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>有意思的导演</h2>
+      <h3>姜文</h3>
+      <div class="fakeimg" style="height:250px;">
+		  <img src="media/姜文.jpg" alt="" style="height:200px;width:150px;margin-left: 20px;">
+		  <img src="media/阳光灿烂的日子.jpg" alt="" style="height:200px;width:180px;margin-left: 20px;" >
+		  <img src="media/芙蓉镇.jpg" alt="" style="height:200px;width:180px;margin-left: 20px;">
+		   <img src="media/让子弹飞.jpg" alt="" style="height:200px;width:180px;margin-left: 20px;">
+		</div>
+      <h5>介绍</h5>
+      <p>&nbsp;&nbsp;&nbsp;演员 / 导演 / 制片人 / 编剧 / 配音 </p>
+		<p style="font-family:STXingkai">“我们强迫把生活扭曲成一个故事给大家看，叫做电影。但是生活对大部分人，扪心自问，是不能用懂和不懂来说的，大部分时候是不懂的。眼前的生活我们也不懂。</p>
+    </div>
+    <div class="card">
+      <h2>国外导演</h2>
+      <h3>克里斯托弗·诺兰 Christopher Nolan</h3>
+      <div class="fakeimg" style="height:250px;">
+		   <img src="media/诺兰.jpg" alt="" style="height:200px;width:150px;margin-left: 20px;">
+		  <img src="media/敦刻尔克.jpg" alt="" style="height:200px;width:180px;margin-left: 20px;" >
+		  <img src="media/蝙蝠侠.jpg" alt="" style="height:200px;width:180px;margin-left: 20px;">
+		   <img src="media/追随.jpg" alt="" style="height:200px;width:180px;margin-left: 20px;">
+		  
+		  
+		 </div>
+      <h5>介绍</h5>
+      <p>&nbsp;&nbsp;&nbsp;编剧 / 导演 / 制片人 / 摄影 / 剪辑 </p>
+	  <p style="font-family:STXingkai">“我是克里斯托弗·诺兰，一个典型的英国人，像我的前辈希区柯克那样，不仅是一个导演，也是一个拥有奇想能力的人。”这是诺兰对自己的评价.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>姜文的采访合集</h2>
+      <div class="fakeimg" style="height:280px;">
+		  <a href="https://www.bilibili.com/video/BV1Gs411H7bf?from=search&seid=3090818692235396448" target="_blank">采访合集</a>
+		<iframe src="https://www.bilibili.com/video/BV1Gs411H7bf?from=search&seid=3090818692235396448" style="height:230px;width:420px;" name="iframe_c"></iframe>
+		</div>
+     <p style="margin-left:80px">姜文和昆汀的梦幻联动，可以搜搜看看</p>
+    </div>
+    <div class="card">
+      <h3>B站电影混剪</h3>
+      <div class="fakeimg">
+		   <a href="https://www.bilibili.com/video/BV1yW411L7SW?from=search&seid=8817515414968012826" target="_blank">电影混剪</a>
+		<iframe src="https://www.bilibili.com/video/BV1yW411L7SW?from=search&seid=8817515414968012826" style="height:230px;width:420px;" name="iframe_b"></iframe>
+		</div>
+      
+    </div>
+    <div class="card" style="height:250px;">
+      <h3>来豆瓣，选电影</h3>
+		<a href="https://movie.douban.com/explore#!type=movie&tag=%E7%83%AD%E9%97%A8&sort=recommend&page_limit=20&page_start=0" target="_blank">豆瓣选电影</a>
+      <iframe src="https://movie.douban.com/explore#!type=movie&tag=%E7%83%AD%E9%97%A8&sort=recommend&page_limit=20&page_start=0" style="height:130px;width:460px;" name="iframe_a"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>我留下脚印，让后人来追寻。 &nbsp;&nbsp;——德里克·贾曼<br>I left footprints for posterity to pursue.——Derek Jarman</h2>
+</div>
+<script>
+</script>
+</body>
+</html>

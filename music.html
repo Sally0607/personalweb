@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>music</title>
+<style>
+  
+    img first-child{position:absolute;top:50px;left:100px; 
+		        width:950px;height:650px;
+	}
+	#faye{position:absolute;top:150px;left:100px; 
+		        width:auto;height:100%;}
+	#lana{position:absolute;top:145px;left:390px; 
+		        width:auto;height:100%;}
+	#eason{position:absolute;top:160px;left:680px; 
+		        width:auto;height:100%;}
+	#alan{position:absolute;top:180px;left:950px; 
+		        width:auto;height:100%;}
+	/*audio{width:0;
+	      height:0;
+		 overflow:hidden;
+	}
+	可以隐藏音乐播放图标*/
+	/*span{
+		font-family: "STXingkai",华文行楷;
+		margin-top:10px;
+		margin-left: 0px;
+	}*/
+</style>
+
+	
+</head>
+
+<body>
+	<img src="media/music小图.png" alt="" title="点击图片，揭晓歌手身份，同时播放歌曲！"><br>
+	<img src="media/Faye.png" alt="" id="faye" title="点击图片，揭晓歌手身份，同时播放歌曲！">
+	<img src="media/打雷.png" alt="" id="lana" title="点击图片，揭晓歌手身份，同时播放歌曲！">
+	<img src="media/医生.png" alt="" id="eason" title="点击图片，揭晓歌手身份，同时播放歌曲！">
+	<img src="media/校长.png" alt="" id="alan" title="点击图片，揭晓歌手身份，同时播放歌曲！">
+	<audio id="fayem" controls >
+		<source src="media/王菲 - 暧昧cut.mp3" >
+	</audio>
+	<audio id="lanam" controls >
+		<source src="media/打雷-withoutyoucut.mp3" >
+	</audio>
+	<audio id="easonm" controls >
+		<source src="media/陈奕迅-葡萄成熟时cut.mp3" >
+	</audio>
+	<audio id="alanm" controls >
+		<source src="media/谭咏麟-朋友cut.mp3">
+	</audio>
+<script>
+	var fayebtn=document.getElementById("faye");
+	var fayem=document.getElementById("fayem");
+	fayebtn.onclick=function(){
+		fayebtn.src="media/Faye2.png";
+	    fayem.play();
+	}
+	var lanabtn=document.getElementById("lana");
+	var lanam=document.getElementById("lanam");
+	lanabtn.onclick=function(){
+		lanabtn.src="media/打雷2.png";
+		lanam.play();
+	}
+	var easonbtn=document.getElementById("eason");
+	var easonm=document.getElementById("easonm");
+	    easonbtn.onclick=function(){
+		eason.src="media/Eason2.png";
+		easonm.play();
+	}
+	var alanbtn=document.getElementById("alan");
+	var alanm=document.getElementById("alanm");
+	    alanbtn.onclick=function(){
+	    alan.src="media/谭咏麟2.png";
+		alanm.play();
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>book</title>
+<style>
+	img first-child{
+		float: clear;
+		width:15%;height:auto;
+		position:absolute;top:60px;left:100px;
+		margin:20px 50px;
+	}
+	.books img{
+		margin:0px 40px 0px 50px;
+		width:18%;
+		
+	}
+</style>
+</head>
+
+<body>
+	<img src="media/book小图.png"  alt="" ><br>
+	<span style="font-family:STXingkai;margin-left:50px;font-size:20px">点击文字，解锁书籍！</span>
+	<div class="books">
+	<img src="media/白夜行1.png" alt="" id="bai">
+	<img src="media/射雕1.png" alt="" id="she">
+	<img src="media/菊与刀1.png" alt="" id="ju">
+	<img src="media/中国1.png" alt="" id="zhong">
+	</div>
+	<script>
+		var baibtn=document.getElementById("bai");
+		    baibtn.onclick=function(){
+		   baibtn.src="media/白夜行.png";}
+		var shebtn=document.getElementById("she");
+		    shebtn.onclick=function(){
+		   shebtn.src="media/射雕.png";}
+		var jubtn=document.getElementById("ju");
+		    jubtn.onclick=function(){
+		    jubtn.src="media/菊与刀.png";}
+		var zhongbtn=document.getElementById("zhong");
+		    zhongbtn.onclick=function(){
+		   zhongbtn.src="media/中国.png";}
+	</script>
+</body>
+</html>
